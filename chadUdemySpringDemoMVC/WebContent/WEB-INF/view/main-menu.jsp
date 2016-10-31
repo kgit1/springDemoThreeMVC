@@ -17,14 +17,18 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 </head>
 <body>
 <h2>Spring MVC DEMO - Home Page</h2>
-
+<p><a href="http://docs.spring.io/autorepo/docs/spring/current/
+spring-framework-reference/htmlsingle/#view-jsp-formtaglib">Spring Form tags</a><p>
 <hr>
 <p><a href="showForm">showForm</a></p>
 <p><a href="wattomcat">How to deploy .war on tomcat</a></p>
 <!-- /chadUdemySpringDemoMVC/WebContent/WEB-INF/view/wattomcat.jsp -->
 <hr>
-<input type="button" onclick="doSomeWork()" value="Click Me"/>
+<p><a href="student/showForm">StudentForm</a></p>
+
+
 <p><a href="funny/showForm">Silly Controller</a></p>
+<input type="button" onclick="doSomeWork()" value="Click Me"/>
 
 <img src="${pageContext.request.contextPath}/resources/images/yol.png">
 
