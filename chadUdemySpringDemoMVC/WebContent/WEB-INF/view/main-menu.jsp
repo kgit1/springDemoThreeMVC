@@ -19,11 +19,13 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <h2>Spring MVC DEMO - Home Page</h2>
 
 <hr>
-<a href="showForm">showForm</a>
-<a href="wattomcat">How to deploy .war on tomcat</a>
+<p><a href="showForm">showForm</a></p>
+<p><a href="wattomcat">How to deploy .war on tomcat</a></p>
 <!-- /chadUdemySpringDemoMVC/WebContent/WEB-INF/view/wattomcat.jsp -->
 <hr>
 <input type="button" onclick="doSomeWork()" value="Click Me"/>
+<p><a href="funny/showForm">Silly Controller</a></p>
+
 <img src="${pageContext.request.contextPath}/resources/images/yol.png">
 
 </body>
