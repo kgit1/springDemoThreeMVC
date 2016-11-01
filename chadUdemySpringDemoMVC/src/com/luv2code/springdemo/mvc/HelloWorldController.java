@@ -65,4 +65,14 @@ public class HelloWorldController {
 		return "wattomcat";
 	}
 	
+	@RequestMapping("/tomcatWinStart")
+	public String showInfo1(){
+		return "tomcatWinStart";
+	}
+	
+	@RequestMapping("/countryFile")
+	public String showInfo2(){
+		return "countryFile";
+	}
+	
 }

@@ -11,21 +11,21 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <title>Student form</title>
 </head>
 <body>
-<a href="">main</a>
+<a href="${pageContext.request.contextPath}">main1</a>
 
 	<!--create spring form mapped by name "/processForm"
 	and add data to model attribute by name "student"  -->
 	<form:form action="processForm" modelAttribute="student">
 	
-	<!-- will access student object through model attribute and model
-	and will use object's getter "getFirstName" -->
+	<!-- access student object through model attribute and model
+	and  use object's getter "getFirstName" -->
 	First name: <form:input path="firstName"/>
 	
-	<br><br>
-	<!-- will access student object through model attribute and model
-	and will use object's getter "getLastName" -->
+<br><br>
+	<!-- access student object through model attribute and model
+	and use object's getter "getLastName" -->
 	Last name: <form:input path="lastName"/>
-	<br><br>
+<br><br>
 	
 	<!-- dropdownlist of given countries -->
 	Country:    <form:select path="country">
@@ -43,16 +43,35 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 		
 		<!-- dropdown list from LinkedHashMap --> 
 		<form:options items="${student.countryList}"/>
+		
+		<!-- dropdown list from properties file -->
+		<!-- access data from model attribute -> theCountryOptions1 -->
+		<!-- annotated by @Value in StudentController -->
+		<form:options items="${theCountryOptions1}"/>
+		
 	</form:select>
-			
+<br><br>
+		<!-- radiobuttons and checkboxes -->
+	Favorite Language:
+		Java <form:radiobutton path="favoriteLanguage" value="Java" />
+		C# <form:radiobutton path="favoriteLanguage" value="C#" />
+		PHP <form:radiobutton path="favoriteLanguage" value="PHP" />
+		Ruby <form:radiobutton path="favoriteLanguage" value="Ruby" />
+<br><br>
+
+	Operating Systems:
+		Linux <form:checkbox path="operatingSystems" value="Linux" />
+		Mac OS <form:checkbox path="operatingSystems" value="Mac OS" />
+		MS Windows <form:checkbox path="operatingSystems" value="MS Window" />		
 	
 	<!-- will access student object through model attribute and model
 	and will use object setters "setFirstName" and "getLastName" -->
 	<input type="submit" value="Submit"/>
 	
 	</form:form>
-	
-
+	<hr>
+	<img src="${pageContext.request.contextPath}
+	/resources/images/spring-form.jpg"/>
 
 </body>
 </html>

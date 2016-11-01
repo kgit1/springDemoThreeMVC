@@ -10,7 +10,8 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <title>Helloworld form</title>
 </head>
 <body>
-
+<a href="${pageContext.request.contextPath}">main1</a>
+<hr>
 <!-- take's data from our input and sent's it to our model
 binded to own name -> studentName and form name -> processForm 
 and than after controller by form name sent's us to some page by form name

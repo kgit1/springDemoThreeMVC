@@ -12,7 +12,8 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <body>
 
 Hell World of Spring!
-<a href="">main</a>
+<a href="${pageContext.request.contextPath}">main1</a>
+<hr>
 
 <br><br>
 Student name: ${param.studentName}

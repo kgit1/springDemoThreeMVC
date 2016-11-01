@@ -8,10 +8,11 @@ public class Student {
 	private String firstName = "John";
 	private String lastName = "Doe";
 	private String country;
+	private String favoriteLanguage;
+	private String[] operatingSystems;
 	private LinkedHashMap<String, String> countryList;
 	private ArrayList<String> countryOptions;
 	
-
 	public Student() {
 		countryOptions = new ArrayList<>();
 		countryOptions.add("1Brazil");
@@ -59,4 +60,20 @@ public class Student {
 		return countryOptions;
 	}
 
+	public String getFavoriteLanguage() {
+		return favoriteLanguage;
+	}
+
+	public void setFavoriteLanguage(String favoriteLanguage) {
+		this.favoriteLanguage = favoriteLanguage;
+	}
+
+	public String[] getOperatingSystems() {
+		return operatingSystems;
+	}
+
+	public void setOperatingSystems(String[] operatingSystems) {
+		this.operatingSystems = operatingSystems;
+	}
+	
 }

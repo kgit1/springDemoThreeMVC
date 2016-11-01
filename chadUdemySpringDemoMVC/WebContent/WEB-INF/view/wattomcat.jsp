@@ -12,7 +12,7 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <body>
 <br><br>
 <hr>
-<a href="">main</a>
+<a href="${pageContext.request.contextPath}">main1</a>
 <hr>
 <p>Deploying To Tomcat using WAR files</p>
 <p>Section 12, Lecture 110</p>

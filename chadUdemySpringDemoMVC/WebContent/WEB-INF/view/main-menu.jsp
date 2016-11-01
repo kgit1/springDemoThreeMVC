@@ -21,13 +21,14 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 spring-framework-reference/htmlsingle/#view-jsp-formtaglib">Spring Form tags</a><p>
 <hr>
 <p><a href="showForm">showForm</a></p>
-<p><a href="wattomcat">How to deploy .war on tomcat</a></p>
-<!-- /chadUdemySpringDemoMVC/WebContent/WEB-INF/view/wattomcat.jsp -->
-<hr>
 <p><a href="student/showForm">StudentForm</a></p>
-
-
+<!-- /chadUdemySpringDemoMVC/WebContent/WEB-INF/view/wattomcat.jsp -->
 <p><a href="funny/showForm">Silly Controller</a></p>
+<hr>
+<p><a href="${pageContext.request.contextPath}/tomcatWinStart">tomcatWinStart</a></p>
+<p><a href="wattomcat">How to deploy .war on tomcat</a></p>
+<p><a href="countryFile">Use properties file to load country options</a></p>
+
 <input type="button" onclick="doSomeWork()" value="Click Me"/>
 
 <img src="${pageContext.request.contextPath}/resources/images/yol.png">

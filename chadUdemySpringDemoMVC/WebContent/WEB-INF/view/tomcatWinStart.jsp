@@ -6,13 +6,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" 
 href="${pageContext.request.contextPath}/resources/css/main.css">
-<title>Silly Controller</title>
+<title>tomcatWinStart</title>
 </head>
 <body>
 <a href="${pageContext.request.contextPath}">main1</a>
 <hr>
+<p>1) Windows (if Tomcat is setup as Windows Service)</p>
 
-<h3>SILLY CONTROLLER!!</h3>
+<p>To Start server: <Tomcat Root>/bin>Tomcat8.exe start</p>
+<p>To Stop server: <Tomcat Root>/bin>Tomcat8.exe stop</p>
+<p>2) Windows (if you have downloaded binaries as .zip)</p>
+
+<p>To Start server: <Tomcat Root>/bin>catalina.bat start</p>
+<p>To Stop server: <Tomcat Root>/bin>catalina.bat stop</p>
 
 </body>
 </html>
