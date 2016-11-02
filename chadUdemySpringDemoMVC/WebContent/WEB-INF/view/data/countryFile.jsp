@@ -9,12 +9,17 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <title>Countries from file</title>
 </head>
 <body>
+<div class="main">
 <a href="${pageContext.request.contextPath}">main1</a>
 <hr>
-<div class="message-container message-container--article"> <div class="a1">FAQ: Use properties file to load country options</div> <div class="a2 mb15">Section 14, Lecture 124</div> <div ng-bind-html="content" prettify=""><div class="asset-container">
+<div class="message-container message-container--article">
+ <div class="a1">FAQ: Use properties file to load country options</div>
+  <div class="a2 mb15">Section 14, Lecture 124</div> 
+  <div ng-bind-html="content" prettify="">
+  <div class="asset-container">
     <div class="asset-container__padding article-view">
-        <div class="w3c-default">
-            <p><strong>Question:&nbsp;</strong></p><p>How to use properties file to load country options</p><p><strong>Answer:</strong></p><p>This solution will show you how to place the country options in a properties file. The values will no longer be hard coded in the Java code.</p>
+      <div class="w3c-default">
+          <p><strong>Question:&nbsp;</strong></p><p>How to use properties file to load country options</p><p><strong>Answer:</strong></p><p>This solution will show you how to place the country options in a properties file. The values will no longer be hard coded in the Java code.</p>
 
 <p><strong>1. Create a properties file to hold the countries. It will be a name value pair. &nbsp;Country code is name. Country name is the value.</strong></p>
 
@@ -296,7 +301,7 @@ return "student-confirmation";
 
 <p>&lt;form:select path="country"&gt;</p>
 
-<p>&lt;form:options items="${theCountryOptions}" /&gt;</p>
+<p>&lt;form:options items="$ {theCountryOptions}" /&gt;</p>
 
 <p>&lt;/form:select&gt;</p>
 
@@ -333,6 +338,7 @@ return "student-confirmation";
 <p>&lt;/html&gt;</p><p><br></p>
         </div>
     </div>
+</div>
 </div>
 </div>
  </body>

@@ -9,6 +9,7 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <title>tomcatWinStart</title>
 </head>
 <body>
+<div class="main">
 <a href="${pageContext.request.contextPath}">main1</a>
 <hr>
 <p>1) Windows (if Tomcat is setup as Windows Service)</p>
@@ -19,6 +20,6 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 
 <p>To Start server: <Tomcat Root>/bin>catalina.bat start</p>
 <p>To Stop server: <Tomcat Root>/bin>catalina.bat stop</p>
-
+</div>
 </body>
 </html>

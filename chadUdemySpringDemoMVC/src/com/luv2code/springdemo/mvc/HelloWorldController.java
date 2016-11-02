@@ -62,17 +62,22 @@ public class HelloWorldController {
 	
 	@RequestMapping("/wattomcat")
 	public String showInfo(){
-		return "wattomcat";
+		return "data/wattomcat";
 	}
 	
 	@RequestMapping("/tomcatWinStart")
 	public String showInfo1(){
-		return "tomcatWinStart";
+		return "data/tomcatWinStart";
 	}
 	
 	@RequestMapping("/countryFile")
 	public String showInfo2(){
-		return "countryFile";
+		return "data/countryFile";
+	}
+	
+	@RequestMapping("/radioButton")
+	public String showInfo3(){
+		return "data/radioButton";
 	}
 	
 }

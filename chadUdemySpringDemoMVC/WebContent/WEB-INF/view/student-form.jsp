@@ -11,6 +11,7 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <title>Student form</title>
 </head>
 <body>
+<div class="main">
 <a href="${pageContext.request.contextPath}">main1</a>
 
 	<!--create spring form mapped by name "/processForm"
@@ -53,12 +54,21 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <br><br>
 		<!-- radiobuttons and checkboxes -->
 	Favorite Language:
+	<!-- path - where data will go ->"favoriteLanguage"(student.setFavoriteLanguage) -->
+	<!-- value - what data will go -->
 		Java <form:radiobutton path="favoriteLanguage" value="Java" />
 		C# <form:radiobutton path="favoriteLanguage" value="C#" />
 		PHP <form:radiobutton path="favoriteLanguage" value="PHP" />
 		Ruby <form:radiobutton path="favoriteLanguage" value="Ruby" />
 <br><br>
-
+	Favorite Language populated: 
+	<!-- path - where data will go ->"favoriteLanguage"(student.setFavoriteLanguage) -->
+	<!-- value - what data will go -->
+	<form:radiobuttons path="favoriteLanguage" items="${student.favoriteLanguageOptions}"  />
+<br><br>
+	Favorite Language populated1:
+	<form:radiobuttons path="favoriteLanguage" items="${student.favoriteLanguageOptions1}" />
+<br><br>
 	Operating Systems:
 		Linux <form:checkbox path="operatingSystems" value="Linux" />
 		Mac OS <form:checkbox path="operatingSystems" value="Mac OS" />
@@ -72,6 +82,6 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 	<hr>
 	<img src="${pageContext.request.contextPath}
 	/resources/images/spring-form.jpg"/>
-
+</div>
 </body>
 </html>

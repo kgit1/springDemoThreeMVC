@@ -10,6 +10,7 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <title>.WAR to tomcat</title>
 </head>
 <body>
+<div class="main">
 <br><br>
 <hr>
 <a href="${pageContext.request.contextPath}">main1</a>
@@ -48,5 +49,6 @@ deployment is over because you'll see a new folder created in webapps ...
 with your WAR file name.</p>
 <p>7. Visit your new app. If your war file was: mycoolapp.war then you can 
 access it with:  http://localhost:8080/mycoolapp/</p>
+</div>
 </body>
 </html>

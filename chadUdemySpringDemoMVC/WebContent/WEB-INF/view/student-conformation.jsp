@@ -14,17 +14,20 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <title>Student confirmation form</title>
 </head>
 <body>
+<div class="main">
 <a href="${pageContext.request.contextPath}">main1</a>
 
 <!-- calls student.getFirstName() and student.getLastName() -->
-<p>The student is confirmed:${student.firstName} ${student.lastName}</p>
+<p>The student is confirmed: ${student.firstName} ${student.lastName}</p>
 <p>Country: ${student.country}</p>
 <p>Favorite Language: ${student.favoriteLanguage}</p>
-<p>OS: 
+<p>OS:  
+<ul>
 	<c:forEach items="${student.operatingSystems}" var="singleOS">
-		${singleOS}  
+		  <li>${singleOS}</li>
 	</c:forEach>
-	</p>
-
+</ul>
+</p>
+</div>
 </body>
 </html>

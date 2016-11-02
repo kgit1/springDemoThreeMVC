@@ -9,10 +9,11 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <title>Silly Controller</title>
 </head>
 <body>
+<div class="main">
 <a href="${pageContext.request.contextPath}">main1</a>
 <hr>
 
 <h3>SILLY CONTROLLER!!</h3>
-
+</div>
 </body>
 </html>

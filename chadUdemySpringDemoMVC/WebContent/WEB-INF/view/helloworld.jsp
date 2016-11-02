@@ -10,7 +10,7 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <title>${param.studentName}</title>
 </head>
 <body>
-
+<div class="main">
 Hell World of Spring!
 <a href="${pageContext.request.contextPath}">main1</a>
 <hr>
@@ -20,6 +20,6 @@ Student name: ${param.studentName}
 <hr>
 <br><br>
 The message: ${message}
-
+</div>
 </body>
 </html>

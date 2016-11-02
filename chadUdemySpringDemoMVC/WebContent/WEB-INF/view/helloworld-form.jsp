@@ -10,6 +10,7 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <title>Helloworld form</title>
 </head>
 <body>
+<div class="main">
 <a href="${pageContext.request.contextPath}">main1</a>
 <hr>
 <!-- take's data from our input and sent's it to our model
@@ -42,7 +43,7 @@ we can rich this data by ${param.studentName} -->
 		
 		<input type="submit"/>	
 	</form>
-	
+</div>	
 
 </body>
 </html>
