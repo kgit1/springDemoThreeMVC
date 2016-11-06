@@ -48,7 +48,7 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 		<!-- dropdown list from properties file -->
 		<!-- access data from model attribute -> theCountryOptions1 -->
 		<!-- annotated by @Value in StudentController -->
-		<form:options items="${theCountryOptions1}"/>
+		<!-- <form:options items="${theCountryOptions1}"/> -->
 		
 	</form:select>
 <br><br>

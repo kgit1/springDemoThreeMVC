@@ -16,7 +16,6 @@
                 
 	<!-- Step 3: Add support for component scanning -->
 	<context:component-scan base-package="com.luv2code.springdemo" />
-
 	<!-- Step 4: Add support for conversion, formatting and validation support -->
 	<mvc:annotation-driven/>
 
@@ -28,9 +27,10 @@
 	</bean>
 	
 	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
+<!-- Load the country options properties file in the Spring config file -->
+	<!-- <util:properties  id="countryOptions1" location="classpath:../countries.properties" /> -->
 	
-	<!-- Load the country options properties file in the Spring config file -->
-	<util:properties  id="countryOptions1" location="classpath:../countries.properties" />
+	
 </beans>
 
 

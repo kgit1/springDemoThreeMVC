@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/student")
 public class StudentController {
 
-	@Value("#{countryOptions1}")
-	private Map<String, String> countryOptions1;
+//	@Value("#{countryOptions1}")
+//	private Map<String, String> countryOptions1;
 
 	// will create object of student class for us and send us to
 	// student-form page
@@ -27,7 +27,7 @@ public class StudentController {
 		theModel.addAttribute("student", theStudent);
 
 		// add the country options to the model
-		theModel.addAttribute("theCountryOptions1", countryOptions1);
+//		theModel.addAttribute("theCountryOptions1", countryOptions1);
 		
 		// log the input data
 		System.out.println("theStudent: " + theStudent.getFirstName() + " " 
