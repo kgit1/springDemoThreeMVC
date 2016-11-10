@@ -17,7 +17,8 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 </head>
 <body>
 <div class="main" class="button">
-<h5>v 7nov2016 Spring MVC DEMO - Home Page</h5>
+<h5>v10nov2016 Spring MVC DEMO - Home Page</h5>
+Cogito ergo sum
 <div class="wrap">
 <hr>
 <div class="left">
@@ -33,9 +34,10 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <div>
 <table>
 <tr><td>INFO:</td><td><a href="${pageContext.request.contextPath}/tomcatWinStart" class="button">tomcatWinStart</a></td><tr>
-<tr><td></td><td><a href="wattomcat" class="button">How to deploy .war on tomcat</a></td><tr>
+<tr><td></td><td><a href="wattomcat" class="button">Deploy .war on tomcat</a></td><tr>
 <tr><td></td><td><a href="countryFile" class="button">Use properties file to load country options</a></td><tr>
-<tr><td></td><td><a href="radioButton" class="button">How to populate radio buttons</a></td><tr>
+<tr><td></td><td><a href="radioButton" class="button">Populate radio buttons</a></td><tr>
+<tr><td></td><td><a href="springHibernate" class="button">SpringHibernateStartBuild</a></td><tr>
 <tr><td></td><td><a href="http://docs.spring.io/autorepo/docs/spring/current/
 spring-framework-reference/htmlsingle/#view-jsp-formtaglib" class="button">Spring Form tags</a></td><tr>
 <tr><td></td><td><a href="http://www.instantshift.com/2010/02/10/21-free-music-players-for-your-website/" class="button">Music players for site</a></td><tr>
@@ -61,18 +63,24 @@ spring-framework-reference/htmlsingle/#view-jsp-formtaglib" class="button">Sprin
 </p>
 <p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 <a href="http://www.mysql.ru/docs/man/INSERT.html" class="button">INSERT</a>
-</p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 <a href="http://www.mysql.ru/docs/man/UPDATE.html" class="button">UPDATE</a>
-</p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 <a href="http://www.mysql.ru/docs/man/DELETE.html" class="button">DELETE</a>
 <a href="http://www.mysql.ru/docs/man/TRUNCATE.html" class="button">TRUNCATE</a>
 </p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<a href="bankSQL" class="button">BANK</a>
+</p>
+</div>
+<div>
+<p>HIBERNATE:<a href="hibernateCrud" class="button">CRUD</a>
+<a href="hibernateDz" class="button">DZ</a></p>
+</div>
+<div>
+<p>JAVA:<a href="stringFileToP" class="button">stringFileToP</a>
+<a href="simpleBank" class="button">simpleBank</a></p>
 </div>
 </div>
 </div>
-
 
 <hr>
 <p><input type="button" onclick="doSomeWork()" value="Click Me"/></p>
@@ -85,7 +93,6 @@ type="application/x-shockwave-flash" width="578" height="43"></embed>
 <embed src="http://embedpleer.net/normal/track?id=B2nfs0Bi2zb01B378&t=grey" 
 type="application/x-shockwave-flash" width="578" height="43"></embed>
 </object>
-
 
 <img src="${pageContext.request.contextPath}/resources/images/yol.png">
 </div>
