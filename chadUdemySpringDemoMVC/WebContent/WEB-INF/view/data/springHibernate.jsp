@@ -48,7 +48,48 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <p>			e.printStackTrace();</p>
 <p>			throw new ServletException(e);</p>
 <p>		}</p>
-<p>run servlet -> Run on Server</p>     
+<p>run servlet -> Run on Server</p>  
+<hr>
+WEB-INF-> put spring-mvc-crud-demo-servlet.xml abd web.xml to WEB-INF folder
+WEB-INF-> lib-> put javax.servlet.jsp.jstl-1.2.1.jar
+					javax.servlet.jsp.jstl-api-1.2.1.jar
+					commons-logging-1.2.jar
+					latest spring libs
+					latest hibernate libs from required					
+					and (c3p0 - database connection pooling)
+					from optional->c3p0
+<hr>		
+go to spring-mvc-crud-demo-servlet.xml	and				
+define database dataSource/connection pool
+setup hibernate session factory
+setup hibernate transaction manager
+enable configuration of transactional annotations
+<hr>
+create package controller
+create class CustomerController without main
+@Controller
+@RequestMapping("/customer")
+public class CustomerController {
+	
+	@RequestMapping("/list")
+	public String listCustomers(Model theModel){		
+		return "list-customers";		
+	}
+}
+<hr>
+add to spring-mvc-crud-demo-servlet.xml 
+<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
+to map folder where images and css will be stored 
+create folder view in WEB-INF folder
+create jsp file -> list-customers
+put inside body - List Customers - coming soon....
+put <img src="${pageContext.request.contextPath}/resources/images/how spring mvc.jpg">
+run project on server
+append "customer/list" to address 
+and check if it works
+<hr>
+	
+   
 <hr>  
 </div>
  </body>
