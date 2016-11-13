@@ -22,73 +22,58 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <p>to test db connection create new servlet TestDbServlet</p>
 <p>Next->Next-> uncheck Constructors from superclass and doPost</p>
 <p>in servlet add -> import java.sql.*;</p>
-<p>delete code inside doGet method to replace with our own</p>
-<p>add inside doGet method</p>
-<p>//setup connection variables</p>
-<p>String user = "springstudent";</p>
-<p>String password = "springuser";</p>
-<p></p>
-<p>String jdbcUrl = "jdbc:mysql://localhost/web_customer_tracker?useSSL=false";</p>
-<p>String driver = "com.mysql.jdbc.Driver";</p>
-<p></p>
-<p>//get connection</p>
-	<p>	try{</p>
-<p>			PrintWriter out = response.getWriter();</p>
-<p>			</p>
-<p>			out.println("Connecting to database: " + jdbcUrl);</p>
-<p>			</p>
-<p>			Class.forName(driver);</p>
-<p>			</p>
-<p>			Connection conn = DriverManager.getConnection(jdbcUrl, user, password);</p>
-<p>			</p>
-<p>			out.println();</p>
-<p>			out.println("SUCCESS!!!");</p>
-<p>			conn.close();</p>
-<p>		}catch(Exception e){</p>
-<p>			e.printStackTrace();</p>
-<p>			throw new ServletException(e);</p>
-<p>		}</p>
+<script src="//pastebin.com/embed_js/mCus6vQm"></script>
 <p>run servlet -> Run on Server</p>  
 <hr>
-WEB-INF-> put spring-mvc-crud-demo-servlet.xml abd web.xml to WEB-INF folder
-WEB-INF-> lib-> put javax.servlet.jsp.jstl-1.2.1.jar
-					javax.servlet.jsp.jstl-api-1.2.1.jar
-					commons-logging-1.2.jar
-					latest spring libs
-					latest hibernate libs from required					
-					and (c3p0 - database connection pooling)
-					from optional->c3p0
-<hr>		
-go to spring-mvc-crud-demo-servlet.xml	and				
-define database dataSource/connection pool
-setup hibernate session factory
-setup hibernate transaction manager
-enable configuration of transactional annotations
+<p>WEB-INF-> put spring-mvc-crud-demo-servlet.xml abd web.xml to WEB-INF folder</p>
+<p>WEB-INF-> lib-> put javax.servlet.jsp.jstl-1.2.1.jar</p>
+<p>					javax.servlet.jsp.jstl-api-1.2.1.jar</p>
+<p>					commons-logging-1.2.jar</p>
+<p>					latest spring libs</p>
+<p>					latest hibernate libs from required					</p>
+<p>					and (c3p0 - database connection pooling)</p>
+<p>					from optional->c3p0</p>
+<p><hr>		</p>
+<p>go to spring-mvc-crud-demo-servlet.xml	and				</p>
+<p>define database dataSource/connection pool</p>
+<p>setup hibernate session factory</p>
+<p>setup hibernate transaction manager</p>
+<p>enable configuration of transactional annotations</p>
+<p><hr></p>
+<p>create package controller</p>
+<p>create class CustomerController without main</p>
+<script src="//pastebin.com/embed_js/mnwYB4in"></script>
 <hr>
-create package controller
-create class CustomerController without main
-@Controller
-@RequestMapping("/customer")
-public class CustomerController {
-	
-	@RequestMapping("/list")
-	public String listCustomers(Model theModel){		
-		return "list-customers";		
-	}
-}
+<p>add to spring-mvc-crud-demo-servlet.xml </p>
+<p><mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources></p>
+<p>to map folder where images and css will be stored </p>
+<p>create folder view in WEB-INF folder</p>
+<p>create jsp file -> list-customers</p>
+<p>put inside body - List Customers - coming soon....</p>
+<p>run project on server</p>
+<p>append "customer/list" to address </p>
+<p>and check if it works</p>
+<p><hr></p>
+<p>create package for DAO -DATA ACCESS OBJECT</p>
+<p>create interface CustomerDAO</p>
+<script src="//pastebin.com/embed_js/WSpYgRVG"></script>
+<p>create implementation CustomerDAOImpl</p>
+<script src="//pastebin.com/embed_js/5DNRgSiJ"></script>
 <hr>
-add to spring-mvc-crud-demo-servlet.xml 
-<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
-to map folder where images and css will be stored 
-create folder view in WEB-INF folder
-create jsp file -> list-customers
-put inside body - List Customers - coming soon....
-put <img src="${pageContext.request.contextPath}/resources/images/how spring mvc.jpg">
-run project on server
-append "customer/list" to address 
-and check if it works
+<p>change our CustomerController to work through DAO</p>
+<script src="//pastebin.com/embed_js/97r3UUaZ"></script>
 <hr>
-	
+<p> add jstl tags library to our jsp </p>
+<p>add table to hold and show our data from model from model in controllers method</p>
+<p>and populate table with data usinf foreach</p>
+<script src="//pastebin.com/embed_js/PCKXvCjH"></script>
+<hr>
+<p>web.xml file</p>
+<script src="//pastebin.com/embed_js/Si9mHFZx"></script>
+<hr>
+<p>spring configuration file</p>
+<script src="//pastebin.com/embed_js/XhZNU0v4"></script>
+
    
 <hr>  
 </div>
