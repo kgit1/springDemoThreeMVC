@@ -33,13 +33,13 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <p>					latest hibernate libs from required					</p>
 <p>					and (c3p0 - database connection pooling)</p>
 <p>					from optional->c3p0</p>
-<p><hr>		</p>
+<hr>
 <p>go to spring-mvc-crud-demo-servlet.xml	and				</p>
 <p>define database dataSource/connection pool</p>
 <p>setup hibernate session factory</p>
 <p>setup hibernate transaction manager</p>
 <p>enable configuration of transactional annotations</p>
-<p><hr></p>
+<hr>
 <p>create package controller</p>
 <p>create class CustomerController without main</p>
 <script src="//pastebin.com/embed_js/mnwYB4in"></script>
@@ -53,7 +53,7 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <p>run project on server</p>
 <p>append "customer/list" to address </p>
 <p>and check if it works</p>
-<p><hr></p>
+<hr>
 <p>create package for DAO -DATA ACCESS OBJECT</p>
 <p>create interface CustomerDAO</p>
 <script src="//pastebin.com/embed_js/WSpYgRVG"></script>
@@ -73,8 +73,19 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <hr>
 <p>spring configuration file</p>
 <script src="//pastebin.com/embed_js/XhZNU0v4"></script>
-
-   
+<hr>
+<p>create Service layer</p>
+<img src="${pageContext.request.contextPath}/resources/images/how spring mvc.jpg">
+<p>create package for Service</p>
+<p>Service - layer between controller and DAO</p>
+<p>can add some business logic or integrate together data from</p> 
+<p>different sources</p>   
+<script src="//pastebin.com/embed_js/78dS5V4i"></script>
+<script src="//pastebin.com/embed_js/BRA37Qj4"></script>
+<p>change DAOImpl</p>
+<script src="//pastebin.com/embed_js/8N34dgJT"></script>
+<p>change controller</p>
+<script src="//pastebin.com/embed_js/1qCHKepb"></script>
 <hr>  
 </div>
  </body>
