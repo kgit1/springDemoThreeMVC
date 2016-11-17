@@ -87,6 +87,29 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <p>change controller</p>
 <script src="//pastebin.com/embed_js/1qCHKepb"></script>
 <hr>  
+<hr>
+<p>add "add customer" button to jsp</p>
+<script src="//pastebin.com/embed_js/Wz8dpRsn"></script>
+<p>add mapping to Controller</p>
+<script src="//pastebin.com/embed_js/DR35f140"></script>
+<p>add new jsp page for addButton request</p>
+<script src="//pastebin.com/embed_js/J4ddAW0N"></script>
+<p>add mapping to save customer</p>
+<p>CustomerController</p>
+<script src="//pastebin.com/embed_js/NJqASJcQ"></script>
+<p>then add our method</p>
+<p>Service->ServiceImpl->DAO->DAOImpl</p>
+<script src="//pastebin.com/embed_js/a87j8jUE"></script>
+<script src="//pastebin.com/embed_js/rZBvZEpN"></script>
+<script src="//pastebin.com/embed_js/xQUa9UJ5"></script>
+<p>@Override</p>
+<p>	public void saveCustomer(Customer theCustomer) {</p>
+<p>		//get current hibernate session</p>
+<p>		Session curentSession = sessionFactory.getCurrentSession();</p>
+<p>		
+<p>		//save the customer</p>
+<p>		curentSession.save(theCustomer);</p>
+<p>	}</p>
 </div>
  </body>
 </html>
