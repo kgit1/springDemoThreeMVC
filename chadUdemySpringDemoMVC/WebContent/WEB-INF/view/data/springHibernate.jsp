@@ -114,9 +114,14 @@ href="${pageContext.request.contextPath}/resources/css/main.css">
 <p>change Save method in DAOImpl to save\update now</p>
 <script src="//pastebin.com/embed_js/3Qdt18ee"></script>
 <hr>
-<p></p>
-<hr>
-<hr>
+<p>add changes for delete function</p>
+<p>change form on customer-list to send data to controller</p>
+<script src="//pastebin.com/embed_js/S7VQEJhR"></script>
+<p>add changes to controller</p>
+<script src="//pastebin.com/embed_js/QQs0MEPg"></script>
+<p>then add our method</p>
+<p>Service->ServiceImpl->DAO->DAOImpl</p>
+<script src="//pastebin.com/embed_js/uqESErYX"></script>
 <hr>
 </div>
  </body>
