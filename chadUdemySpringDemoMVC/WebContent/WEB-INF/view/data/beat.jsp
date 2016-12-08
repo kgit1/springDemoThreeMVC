@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" 
 href="${pageContext.request.contextPath}/resources/css/main.css">
-<title>bankSQL</title>
+<title>simpleBank</title>
 </head>
 <body>
 <div class="main">

@@ -108,5 +108,10 @@ public class HelloWorldController {
 	public String showInfo9() {
 		return "data/simpleBank";
 	}
+	
+	@RequestMapping("/beat")
+	public String showInfo10() {
+		return "data/beat";
+	}
 
 }

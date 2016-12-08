@@ -79,12 +79,10 @@ spring-framework-reference/htmlsingle/#view-jsp-formtaglib" class="button">Sprin
 <div>
 <p>JAVA:<a href="stringFileToP" class="button">stringFileToP</a>
 <a href="simpleBank" class="button">simpleBank</a>
-<a href="bankSQL" class="button">simpleBank</a>
-<a href="${pageContext.request.contextPath}/fullBeatBoxApp" class="button">BeatBoxApp</a></p>
+<a href="beat" class="button">BeatBoxApp</a></p>
 </div>
 </div>
 </div>
-
 <hr>
 <p><input type="button" onclick="doSomeWork()" value="Click Me"/></p>
 
