@@ -41,6 +41,7 @@ Cogito ergo sum
 <tr><td></td><td><a href="http://docs.spring.io/autorepo/docs/spring/current/
 spring-framework-reference/htmlsingle/#view-jsp-formtaglib" class="button">Spring Form tags</a></td><tr>
 <tr><td></td><td><a href="http://www.instantshift.com/2010/02/10/21-free-music-players-for-your-website/" class="button">Music players for site</a></td><tr>
+<tr><td></td><td><a href="http://www.wikihow.com/Create-an-Executable-File-from-Eclipse" class="button">Create EXE Eclipse</a></td><tr>
 </table>
 </div>
 </div>
@@ -77,7 +78,9 @@ spring-framework-reference/htmlsingle/#view-jsp-formtaglib" class="button">Sprin
 </div>
 <div>
 <p>JAVA:<a href="stringFileToP" class="button">stringFileToP</a>
-<a href="simpleBank" class="button">simpleBank</a></p>
+<a href="simpleBank" class="button">simpleBank</a>
+<a href="bankSQL" class="button">simpleBank</a>
+<a href="${pageContext.request.contextPath}/fullBeatBoxApp" class="button">BeatBoxApp</a></p>
 </div>
 </div>
 </div>
